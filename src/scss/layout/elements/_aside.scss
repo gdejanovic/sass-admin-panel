@@ -1,0 +1,36 @@
+aside{
+    width:170px;
+    height:100vh;
+    background-color: #ffffff;
+    -ms-flex-order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    ul{
+        list-style: none;
+        button{
+            margin-left:15px;
+            width: 120px;
+            height: 50px;
+            margin-left:-10px;
+            @include button;
+            transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            &:hover{background-color: lighten($color: $button-background-color, $amount: 10%);
+                
+            }
+        }
+    }
+    a{
+        display:block;
+        width: 80%;
+        height:50px;
+        background-color:#fffff9;
+        padding-top: 15px;
+        text-align: left;
+        font-size: .7em;
+        &:hover{
+            background-color:#e5e5e2;
+        }
+    }
+
+}

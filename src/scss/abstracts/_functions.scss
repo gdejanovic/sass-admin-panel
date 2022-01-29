@@ -1,0 +1,19 @@
+@function asset($base, $type, $path){
+    @return url($base + $type + $path);
+}
+
+@function font($path, $base: $base-url){
+    @return asset($base, 'fonts/' ,$path);
+}
+
+@function image($path, $base: $base-url){
+    @return asset($base, 'images/' ,$path);
+}
+
+@for $n from 1 through 8 {
+    tr:nth-child(2n + 1) {
+      background-color: lighten($base-color, $n * 5%);
+    }
+  }
+
+  

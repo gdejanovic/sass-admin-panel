@@ -1,0 +1,108 @@
+// 1. Configuration and helpers
+@import 
+    'abstracts/variables',
+    'abstracts/functions',
+    'abstracts/mixins',
+    'abstracts/maps';
+
+// 2. Vendors
+
+// 3. Base stuff
+@import 
+    'base/fonts',
+    'base/typography';
+
+// 4. Layout
+@import 
+    'layout/elements/navbar',
+    'layout/elements/main-wrapper',
+    'layout/elements/header',
+    'layout/elements/aside',
+    'layout/elements/chart',
+    'layout/elements/dropdown';
+
+
+
+// 5. Components
+
+// 6. Pages
+
+// 7. Themes
+
+
+
+@media only screen and (max-width: 901px) {
+    .visitor-count-wrapper{
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+        div{
+            width: 100% !important;
+            margin: 5px 5px;
+        } 
+        
+    }
+    .under-title{
+        width: 50%;
+    }
+    .lower-portion{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 505px){
+    .logo{
+      visibility: hidden;
+      position: absolute;
+      img{
+          visibility: hidden;
+      }
+    }
+    .navbar{
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and(max-width: 505px) {
+    .dropdown{
+        visibility: visible !important;
+        width: 40%;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-top: 5px;
+        .under-title{
+            div{
+                button{
+                    font-size: 8px;
+                }
+            }
+        }
+    } 
+    .aside{
+        visibility: hidden !important;
+        width: 0px !important;
+        ul{
+            width: 0px;
+            li{
+                width: 0px;
+            }
+        }
+        button{
+            width: 0px;
+        }
+    }
+    main{
+        left:0;
+        width:100%;
+    }
+    
+.chat{
+    width: 100%;
+}
+.comments{
+    width: 100%;
+}
+}

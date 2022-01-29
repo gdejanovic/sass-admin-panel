@@ -1,0 +1,43 @@
+.navbar{
+    
+    height:50px;
+    width: 100vw;
+    background-color: $dark-gray-nav-bg;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    .right-wrapper{
+        display:flex;
+        flex-wrap: wrap;
+        .form-control{
+            border-radius: 100px;
+            display:block;
+            line-height: 1em;
+            align-self: center;
+            margin-right: 5px;
+        }
+        .varun{
+            height:30px;
+            width: 30px;
+            border-radius: 150px;
+            margin: auto 0px;
+            }
+        .name-wrap{
+            display:flex;
+            p{
+                color: white;
+                padding: 0 5px;
+            }
+        }
+    }
+    .logo{
+        background-color: rgb(255, 255, 255);
+        z-index:2;
+        display:inline-block;
+        
+    }
+
+    
+}

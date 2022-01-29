@@ -1,0 +1,19 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/build/assets/css/"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/build/assets/css/"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "/src/scss/main.scss"
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "git.ignoreLimitWarning": true
+}
